@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relax Luxury Salon</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: Inter, sans-serif;
+      background:#f7f3ee;
+      overflow-x:hidden;
+    }
+    .serif{font-family:"Playfair Display",serif;}
+
+    .glass{
+      background:rgba(255,255,255,.55);
+      backdrop-filter:blur(14px);
+      transition:.4s ease;
+    }
+
+    .card{
+      transition:.4s ease;
+    }
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 25px 60px rgba(0,0,0,.12);
+      background:white;
+    }
+
+    .glow:hover{
+      box-shadow:0 0 0 2px #d4af37 inset, 0 20px 40px rgba(0,0,0,.12);
+    }
+
+    .fade{
+      animation:fade .8s ease forwards;
+    }
+    @keyframes fade{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .pulse{animation:pulse 1.8s infinite;}
+    @keyframes pulse{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.1)}
+      100%{transform:scale(1)}
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 w-full z-50 glass py-4">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+
+    <h1 class="serif text-xl font-semibold text-slate-800">
+      Relax luxury salon
+    </h1>
+
+    <nav class="hidden md:flex gap-8 text-sm text-slate-700">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="tel:+919166258494"
+       class="bg-slate-900 text-white px-4 py-2 rounded-full text-sm hover:opacity-90">
+      Call Now
+    </a>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section id="home" class="h-screen flex items-center justify-center relative text-center">
+
+  <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1600&q=80"
+       class="absolute w-full h-full object-cover scale-110" />
+
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <div class="relative text-white px-6 fade">
+    <h2 class="serif text-5xl md:text-6xl font-semibold">
+      Unwind in Luxury.<br/>Reinvigorate Your Style.
+    </h2>
+
+    <p class="mt-4 text-white/80">
+      A calm, premium salon experience designed for elegance & self-care
+    </p>
+
+    <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+
+      <a href="https://wa.me/919166258494?text=Hi%20Relax%20Luxury%20Salon%2C%20I%20want%20to%20book%20an%20appointment"
+         class="bg-green-500 px-6 py-3 rounded-full glow transition">
+        Book on WhatsApp
+      </a>
+
+      <a href="tel:+919166258494"
+         class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+        Call Now
+      </a>
+
+    </div>
+
+    <p class="mt-6 text-sm text-white/80">
+      ⭐ 530+ Verified Google Reviews | 5.0 Rated Salon in Alwar
+    </p>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="py-20 max-w-6xl mx-auto px-6">
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h3 class="serif text-4xl font-semibold text-slate-800">
+        A Sanctuary of Beauty & Calm
+      </h3>
+
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        Relax Luxury Salon is more than a salon — it is a curated self-care experience.
+        Every service is designed to bring balance, elegance, and confidence to your personality.
+        We combine modern techniques with a peaceful spa-like environment.
+      </p>
+
+      <p class="mt-4 text-slate-600">
+        Located in the heart of Lajpat Nagar, Alwar, we are trusted by hundreds of clients
+        for premium grooming, skincare, and bridal transformations.
+      </p>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow-xl">
+      <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1200&q=80"
+           class="w-full h-full object-cover"/>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-[#f3eee7]">
+
+  <h3 class="serif text-4xl text-center font-semibold text-slate-800">
+    Signature Services
+  </h3>
+
+  <p class="text-center text-slate-600 mt-3">
+    Carefully crafted luxury treatments for complete transformation
+  </p>
+
+  <div class="max-w-6xl mx-auto px-6 mt-12 grid md:grid-cols-3 gap-6">
+
+    <!-- 1 -->
+    <div class="card bg-white p-6 rounded-2xl">
+      <h4 class="font-semibold text-lg">Luxury Hair Design</h4>
+      <p class="text-sm text-slate-600 mt-2">Precision cuts, spa wash & styling</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="card bg-white p-6 rounded-2xl">
+      <h4 class="font-semibold text-lg">Keratin Smooth Therapy</h4>
+      <p class="text-sm text-slate-600 mt-2">Silky, frizz-free professional treatment</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="card bg-white p-6 rounded-2xl">
+      <h4 class="font-semibold text-lg">Bridal Luxury Package</h4>
+      <p class="text-sm text-slate-600 mt-2">Full bridal makeover experience</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="card bg-white p-6 rounded-2xl">
+      <h4 class="font-semibold text-lg">Glow Facial Therapy</h4>
+      <p class="text-sm text-slate-600 mt-2">Instant radiance & hydration boost</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="card bg-white p-6 rounded-2xl">
+      <h4 class="font-semibold text-lg">Body Relax Spa</h4>
+      <p class="text-sm text-slate-600 mt-2">Deep relaxation massage therapy</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="card bg-white p-6 rounded-2xl">
+      <h4 class="font-semibold text-lg">Makeup Studio</h4>
+      <p class="text-sm text-slate-600 mt-2">Party & event glam looks</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-20">
+
+  <h3 class="serif text-4xl text-center font-semibold text-slate-800">
+    Client Experiences
+  </h3>
+
+  <div class="max-w-5xl mx-auto px-6 mt-12 grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <p class="text-yellow-500">★★★★★</p>
+      <p class="mt-3 text-slate-700">“Truly luxury experience. Calm and professional staff.”</p>
+      <h5 class="mt-4 font-semibold">Priyanka Kanwar</h5>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <p class="text-yellow-500">★★★★★</p>
+      <p class="mt-3 text-slate-700">“Best salon in Alwar. Loved the ambience!”</p>
+      <h5 class="mt-4 font-semibold">Megha Sharma</h5>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <p class="text-yellow-500">★★★★★</p>
+      <p class="mt-3 text-slate-700">“Bridal makeover was beyond expectations.”</p>
+      <h5 class="mt-4 font-semibold">Rahul Verma</h5>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- MAP -->
+<section class="py-20 bg-[#f3eee7]">
+
+  <h3 class="serif text-4xl text-center font-semibold text-slate-800">
+    Visit Our Salon
+  </h3>
+
+  <p class="text-center text-slate-600 mt-3">
+    Lajpat Nagar, Alwar, Rajasthan 301001
+  </p>
+
+  <div class="max-w-5xl mx-auto px-6 mt-10 rounded-2xl overflow-hidden shadow-xl">
+
+    <iframe
+      src="https://www.google.com/maps?q=Lajpat%20Nagar%20Alwar%20Rajasthan&output=embed"
+      class="w-full h-[400px]"
+      loading="lazy">
+    </iframe>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-slate-900 text-white py-12">
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+    <div>
+      <h4 class="serif text-2xl">Relax Luxury Salon</h4>
+      <p class="text-sm text-white/70 mt-2">
+        Premium beauty & wellness destination in Alwar.
+      </p>
+    </div>
+
+    <div>
+      <h5 class="font-semibold">Hours</h5>
+      <p class="text-sm text-white/70">Mon-Sat: 10 AM - 9 PM</p>
+      <p class="text-sm text-white/70">Sun: 11 AM - 7 PM</p>
+    </div>
+
+    <div>
+      <h5 class="font-semibold">Contact</h5>
+      <p class="text-sm text-white/70">📍 Lajpat Nagar, Alwar</p>
+      <p class="text-sm text-white/70">📞 +91 9166258494</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919166258494?text=Hello%20Relax%20Luxury%20Salon"
+   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg pulse">
+   💬
+</a>
+
+
+<script>
+  window.addEventListener("scroll", () => {
+    const nav = document.getElementById("nav");
+    if(window.scrollY > 40){
+      nav.classList.add("py-2");
+    } else {
+      nav.classList.remove("py-2");
+    }
+  });
+</script>
+
+</body>
+</html>
